@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2b0715, #051d47); /* Gradient Background */
+  color: white;
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #ddd;
+}

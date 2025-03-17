@@ -1,0 +1,122 @@
+/* 🌟 Modern Signup Page with Gradient Background */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(135deg, #20033f, #051d47); /* Gradient Background */
+}
+
+/* 📌 Signup Form Box */
+.signup-form {
+  background: rgba(255, 255, 255, 0.15); /* Transparent Glass Effect */
+  backdrop-filter: blur(10px); /* Blur for Glassmorphism */
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.signup-form:hover {
+  transform: scale(1.02); /* Slight Zoom Effect on Hover */
+}
+
+.signup-form h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+/* 🏷️ Input Fields */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* ✅ Signup Button */
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #300315, #4b0913); /* Modern Gradient Button */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background: linear-gradient(135deg, #060b00, #0a0105);
+  box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+}
+
+/* ❗ Error & Success Messages */
+.error-message, .success-message {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.success-message {
+  background: rgba(0, 255, 0, 0.3);
+}
+
+/* 🔗 Login Link */
+.login-link {
+  margin-top: 1rem;
+  color: white;
+}
+
+.login-link a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+  .signup-form {
+    padding: 2rem;
+    max-width: 90%;
+  }
+}

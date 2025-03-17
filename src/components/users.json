@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1741970874771,
+      "fullName": "madhuvr",
+      "email": "aswith111@gmail.com",
+      "password": "222",
+      "createdAt": "2025-03-14T16:47:54.771Z",
+      "applications": []
+    },
+    {
+      "id": 1741971189405,
+      "fullName": "maddy",
+      "email": "maddy@gmail.com",
+      "password": "111",
+      "dateOfBirth": "2012-06-05",
+      "age": 12,
+      "createdAt": "2025-03-14T16:53:09.405Z",
+      "applications": []
+    },
+    {
+      "id": 1741971863121,
+      "fullName": "Mandhira",
+      "email": "mandhira@gmail.com",
+      "password": "999",
+      "dateOfBirth": "2004-09-13",
+      "age": 20,
+      "createdAt": "2025-03-14T17:04:23.121Z",
+      "applications": []
+    },
+    {
+      "id": 1742115927339,
+      "fullName": "dharnish",
+      "email": "dharnish@gmail.com",
+      "password": "000",
+      "dateOfBirth": "2023-08-23",
+      "age": 1,
+      "createdAt": "2025-03-16T09:05:27.339Z",
+      "applications": []
+    },
+    {
+      "id": 1742132301962,
+      "fullName": "mala",
+      "email": "mala@gmail.com",
+      "password": "111",
+      "dateOfBirth": "2003-12-12",
+      "age": 21,
+      "createdAt": "2025-03-16T13:38:21.962Z",
+      "applications": []
+    }
+  ]
+}

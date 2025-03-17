@@ -1,0 +1,217 @@
+.landing-container {
+  display: flex;
+  height: 95vh;
+  background: linear-gradient(135deg, #130236 0%, #272502 100%);
+  color: #4CAF50;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add subtle background animation */
+.landing-container::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgb(3, 11, 3) 0%, transparent 50%);
+  animation: rotate 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.left-section {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(19, 2, 41);
+  border-radius: 20px;
+  padding: 40px;
+  background: rgb(8, 6, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 40px rgb(225, 227, 228);
+  position: relative;
+  z-index: 1;
+}
+
+.image-content {
+  text-align: center;
+  max-width: 700px;
+}
+
+.image-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #4CAF50, #45a049, #66bb6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(76, 175, 80, 0.3);
+}
+
+.image-content p {
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgb(135, 11, 94));
+  transition: transform 0.3s ease;
+}
+
+.image-content img:hover {
+  transform: scale(1.02);
+}
+
+.right-section {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.top-auth, .bottom-auth {
+  border: 1px solid rgb(240, 244, 240);
+  border-radius: 20px;
+  padding: 30px;
+  background: rgb(14, 6, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgb(1, 14, 1);
+  transition: all 0.3s ease;
+}
+
+.top-auth:hover, .bottom-auth:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgb(148, 201, 14);
+}
+
+.top-auth {
+  flex: 0.4;
+}
+
+.bottom-auth {
+  flex: 0.6;
+}
+
+.quick-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  background: rgba(74, 39, 39, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  border-radius: 12px;
+  color: #e9efea;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #010b01;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.1);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #2f0101, #45a049);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #45a049, #320202);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgb(240, 236, 236);
+}
+
+/* Styling for h2 headings */
+h2 {
+  color: #ece5e5; /* Light color for contrast */
+  margin-bottom: -10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 0 0 20px rgb(219, 225, 219);
+  background: linear-gradient(90deg, #edefed, #cde5ce, #66bb6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+/* Hover effect for h2 */
+h2:hover {
+  text-shadow: 0 0 30px rgba(76, 175, 80, 0.5);
+  transform: scale(1.05);
+}
+
+/* Styling for h2 inside login form */
+.quick-login h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 1rem;
+
+}
+
+/* Styling for "New Here?" heading */
+.bottom-auth h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.signup-features {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  gap: 15px;
+}
+
+.feature {
+  text-align: center;
+  color: #f4f3f3;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(74, 39, 39, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  background: rgb(83, 4, 4);
+  transform: translateY(-3px);
+}
